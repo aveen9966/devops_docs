@@ -1,0 +1,286 @@
+
+Git & GitHub Interview Questions
+
+
+
+What is git?
+Ans) Git is a source code management tool,when the developer pushes the code into git at that time we can track 
+     the changesand who pushes the code and also we can see the file to file difference.
+What is the difference between git and GitHub?
+Ans)  Git is a version control system that lets you manage and keep track of your source code history. 
+      GitHub is a cloud-based hosting service that lets you manage Git repositories. 
+
+What is the abbreviation of VCS?
+Ans)version control system /software.
+
+What is the abbreviation of SCM?
+Ans) source code management.
+
+Write down 5 SCM names?
+Ans) git hub , Git lab ,Bigbucket , SVN(Sub version),TFS (team foundation server).
+
+What is Branch?
+Ans) branch is nothing but parallel development of project by doing modification in coding whch will not effct the main line ,most recent commit on a branch is referred as tip 
+     of that branch nothing but head which moves forward as changes done through commits
+
+What is tag?
+Ans) it refers specific point in histoty were different version are released from this point 
+What is the difference between Branch and Tag?
+Ans) branch vs tag main difference is that branch always points the head of development line and will change after commitimg and pushing done were a tags will not change.
+
+When we will create the branch and when we will the create tag?
+Ans) branch is created when develpoment should be done paralley
+     tag is created when specific is going to release
+
+What is “git add” command will do?
+Ans) " git add".* - it will transfer the files from working area to satging area 
+
+What is the command to revert the code from staging area to working area?
+Ans) git reset file name 
+
+What is the git revert command?
+Ans) The git revert command is a forward-moving undo operation that offers a safe method of undoing changes.
+
+What is the difference between fetch and pull in Git?
+Ans)  git fetch will fetch information only to loacal repository
+      git pll will fetch not only local repository but also current work station we are working in
+How to see how many branches are currently available in git repo?
+Ans)  git branch -a
+What is the command to create the branch?
+Ans) git branch branch name 
+How to switch from branch to another branch?
+Ans)git checkout branch name
+How to create branch and how to switch to that branch in one command?
+Ans)  git checkout -b branch name
+What is the command to delete the branch in local repo?
+Ans)git branch -d branch name
+
+What is the command to delete branch in remote repo?
+Ans) git push aliyasname -d branch name
+
+What is the branching strategy you are following?
+Ans) Branching strategies coordinate work to allow for easier integration of changes and releases. They create a development workflow
+
+What is git stash command?
+Ans) git stash command will temporarily saves the changes done in woeking directory later we aply or drop it 
+
+What is git cherry-pick ?
+Ans) git cherry pick command wil adopt changes of particular commit to present branch
+
+What does git rebase?
+Ans)  Rebase is the process of moving or combining a sequence of commits to a new base commit. 
+
+What is PAT?
+Ans) personal access token password for integrating to github remote repository
+
+What is SSH key and how to generate ssh-key?
+Ans) 
+
+What is the default path for ssh keys?
+Ans)\.ssh
+
+How many file will generate if you create ssh keys and what are the file names?
+Ans) 
+
+What is the difference between git & GitHub?
+Ans) 
+
+What are the git best practices while committing the code need to follow?
+Ans) 
+
+How to change git commit message after push (given that no one pulled from remote)?
+Ans)git commit --amend -m "rfrtt"
+
+How to rename the branch name?
+Ans) git branch -m <old name > <new name >
+
+What is the command to get the code from remote git repo?
+Ans) git clone <url>
+
+How to check the particular branch from github?
+Ans)
+What is the command to see all git messages in local repo?
+
+Ans) git log
+
+How to create the repository in git?
+Ans)	 
+How to check if a branch is already merged with any branch or not?
+Ans)git branch merged master 
+
+What is SubGit??
+Ans)SubGit is stress-free tool for migrating from SVN to Git.
+In Which language Git is developed?
+Ans) C and bourne shell 
+What is the difference between git merge and git rebase?
+Ans) Git rebase and merge both integrate changes from one branch into another. Where they differ is how it's done. Git rebase moves a feature branch into a master. 
+Git merge adds a new commit, preserving the history.
+
+What is the difference between git reset and git revert?
+Ans) Reset - On the commit-level, resetting is a way to move the tip of a branch to a different commit. Revert - Reverting undoes a commit by creating a new commit.
+
+What is the git workflow?
+Ans)
+
+Ans)
+How you will migrate the projects from SVN to GitHub?
+Ans)
+What is merge conflicts? Have you resolved the merge conflicts?
+Ans). Merge conflicts occur when competing changes are made to the same line of a file, or when one person edits a file and another person deletes the same file.
+For more information, see "About merge conflicts."
+
+How to see how many files are committed in one particular commit id?
+Ans)  git show commit_id --name
+
+What is git hooks? Can you name some git hooks?
+Ans) There are two groups of Git hooks: client-side / local hooks, which are prompted by events on the local repository,
+such as when a developer commits or merges code. server-side / remote hooks, which are run on the network hosting the repository, 
+and they are prompted by events such as receiving pushes.
+
+What is .gitignore file?
+Ans) A . gitignore file is a plain text file where each line contains a pattern for files/directories to ignore
+
+What is git bare and git non bare repository, use cases?
+Ans) 
+
+What is the git command to create the achieve files?
+Ans)  git archive -
+
+What is git prune, Mirroring and git repack commands?
+Ans) 
+
+What are the git objects?
+Ans) blobs ,commit ,tree ,tag
+
+What is Version control system or Source code manager?
+Ans) Version control, also known as source control, is the practice of tracking and managing changes to software code
+
+Benefits of VCS or SCM?
+Ans) the idea behind the SCM methodology is to prevent and resolve conflicts among developers' codes
+
+What is a repository in GIT?
+Ans) where we can stores the source code
+
+Difference between Git and SVN?
+Ans) Git has a Distributed Model. SVN has a Centralized Model.
+
+What are the two types of git authentication?
+Ans) http & ssh
+
+What are the branches in Git and its purpose?
+Ans) In Git, branches are a part of your everyday development process. Git branches are effectively a pointer to a snapshot of your changes.
+When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes.
+What is the common branching pattern in GIT?
+Ans) The two primary branches in Git flow are main and develop.
+There are three types of supporting branches with different intended purposes: feature, release, and hotfix.
+What is Pull requests?
+Ans) A pull request is a method of submitting contributions to an open development project.
+
+How to install git in Linux & Windows?
+Ans) Install Git on Linux
+From your shell, install Git using apt-get: $ sudo apt-get update $ sudo apt-get install git.
+Verify the installation was successful by typing git --version : $ git --version git version 2.9.2.
+Configure your Git username and email using the following commands, replacing Emma's name with your own.
+
+How to setup repository though command line?
+Ans)
+How to setup repository in github and clone it?
+Ans) on GitHub.com, navigate to the main page of the repository. · Above the list of files, click Code. "Code" button · Click Open with GitHub Desktop to clone
+
+What is git clone command used for?
+Ans) download
+
+What is git config command used for?
+Ans) The git config command is a convenience function that is used to set Git configuration values on a global or local project level. 
+
+Git config data is stored in what location?
+Ans) On windows this file can be found at C:\Documents and Settings\All Users\Application Data\Git\config on Windows XP,
+and in C:\ProgramData\Git\config on Windows Vista and newer.
+
+Git config global and local files?
+Ans) 
+
+Content of git config file?
+Ans) The Git configuration file contains a number of variables that affect the Git commands' behavior. The . git/config file in each repository is used to store the configuration for that repository, and $HOME/.
+gitconfig is used to store a per-user configuration as fallback values for the .
+
+git add command’s purpose?
+Ans) the git add command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit.
+How to remove/rename files in local git repo?
+Ans) Commit the file that you've staged in your local repository.
+$ git commit -m "Rename file" # Commits the tracked changes and prepares them to be pushed to a remote repository.
+# To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
+
+What is the git commit command purpose?
+Ans) The git commit command captures a snapshot of the project's currently staged changes
+
+How to sync local git repo data with github?
+Ans) Open a command prompt. ...
+Change the current working directory to your local project. ...
+Change to your desired branch. ...
+Sync your local repository with the upstream (the original one) ...
+Perform merge. ...
+Push your local changes to your repository.
+
+
+How to change branches in local git repo?
+Ans) git checkout
+
+What is the difference between ‘git remote’ and ‘git clone’?
+Ans) creates a new git repository by copying an existing one located at the URI you specify.01-Feb-2011
+
+git status?
+Ans) The git status command displays the state of the working directory and the staging area
+
+What is the function of ‘git rm’?
+Ans) The primary function of git rm is to remove tracked files from the Git index. 
+
+What is the function of ‘git checkout’ in git?
+Ans)  The git checkout command lets you navigate between the branches created by git branch 
+
+
+Explain what is commit message?
+Ans)  A commit in GitHub is described as a saved change. A commit message explains what change you made to your project.
+
+How to setup github ssh authentication?
+Ans) Log into your GitHub account.
+Click your avatar and choose Settings.
+Select SSH and GPG keys.
+Click New SSH key.
+Enter a title in the field.
+Paste your public key into the Key field.
+Click Add SSH key.
+
+What is git webhooks?
+Ans)  Webhooks allow you to build or set up integrations, such as GitHub Apps or OAuth Apps, which subscribe to certain events on GitHub.com.
+
+Tell me the branching strategies you followed for your project?
+Ans)
+
+What is git rebase?
+Ans) Rebase is an action in Git that allows you to rewrite commits from one branch onto another branch.
+
+What is git stash?
+Ans) temporary shelves
+
+What is the difference between git pull and git fetch?
+Ans) git fetch is the command that tells your local git to retrieve the latest meta-data info from the original (yet doesn't do any file transferring. It's more like just checking to see if there are any changes available).
+git pull on the other hand does that AND brings (copy) those changes from the remote repository.
+
+Difference between git and svn?
+Ans)
+
+What is the difference between "git checkout " and "svn checkout " commands?
+Ans)
+
+Advantages of git over with svn?
+Ans)
+
+Explain about staging area in git?
+Ans) These files are also referred to as "untracked files."
+Staging area is files that are going to be a part of the next commit, which lets git know what changes in the file are going to occur for the next commit.
+The repository contains all of a project's commits. ... They can also be called untracked files.
+
+How do you check after git merge …where merging is correctly or not?
+Ans) git status
+
